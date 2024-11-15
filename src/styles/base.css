@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom CSS for better cross-browser and device compatibility */
+html {
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Dark mode transitions */
+.dark {
+  color-scheme: dark;
+}
+
+/* Improved input styling across browsers */
+input,
+textarea,
+select {
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+/* Mobile-friendly focus states */
+*:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+/* Better touch targets on mobile */
+@media (max-width: 640px) {
+  button, 
+  [role="button"],
+  input,
+  select {
+    min-height: 44px;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Print styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}
+
+/* Dark mode styles */
+.dark body {
+  background-color: #111827;
+  color: #f3f4f6;
+}
+
+.dark .bg-white {
+  background-color: #1f2937;
+}
+
+.dark .border-gray-100 {
+  border-color: #374151;
+}
+
+.dark .text-gray-900 {
+  color: #f3f4f6;
+}
+
+.dark .text-gray-700 {
+  color: #d1d5db;
+}
+
+.dark .text-gray-500 {
+  color: #9ca3af;
+}
+
+/* Improved mobile responsiveness */
+@media (max-width: 640px) {
+  .responsive-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .responsive-padding {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* Better form controls for touch devices */
+@media (hover: none) {
+  input[type="checkbox"],
+  input[type="radio"] {
+    transform: scale(1.2);
+  }
+}
